@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="icon/netflix-icon.png"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!--Icons Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Clone Netflix</title>
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <header class="header-inicial">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <img
+            src="imagens/netflix_logo.png"
+            id="logo-netflix"
+            alt="logo netflix"
+          />
+          <button
+            id="button-menu"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="nav-dropdown" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Navegar
+                </a>
+                <ul
+                  id="dropdown-menu-item"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Filmes</a></li>
+                  <li><a class="dropdown-item" href="#">Séries</a></li>
+                  <li><a class="dropdown-item" href="#">Documentários</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div id="navbar-right" class="d-flex">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-search"></i> Buscar</a
+              >
+              <a class="nav-link" href="#">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div id="carousel-image" class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="imagens/Como-vender-drogas-online.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="button-list">
+              <h2>Como vender drogas online (rápido)</h2>
+              <p style="color: #95a3a3">
+                2019 | 18 | 3 temporadas | Comédias para a TV
+                <i class="bi bi-badge-hd"></i> <i class="bi bi-badge-4k"></i>
+              </p>
+              <p>
+                Para recuperar a ex-namorada, um adolescente nerd começa a
+                vender ecstasy online. Em pouco tempo, ele se torna um dos
+                maiores traficantes da Europa.
+              </p>
+              <p>
+                Estrelando: Maximilian Mundt, Danilo Kamperidis, Lena Klenke
+              </p>
+              <button type="button" class="btn btn-secondary">
+                + MINHA LISTA
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="imagens/critica-review-analise-resgate-4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="button-list">
+              <h2>Resgate</h2>
+              <p style="color: #95a3a3">
+                2020 | 16 | 1h 57min | Filmes baseados em livros
+                <i class="bi bi-badge-hd"></i> <i class="bi bi-badge-4k"></i>
+              </p>
+              <p>
+                Em Bangladesh, o mercenário Tyler Rake luta para sobreviver
+                durante a missão para resgatar o filho de um chefão do crime.
+              </p>
+              <p>
+                Estrelando: Chris Hemsworth, Rudhraksh Jaiswal, Randeep Hooda
+              </p>
+              <button type="button" class="btn btn-secondary">
+                + MINHA LISTA
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="imagens/Army of the Dead.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="button-list">
+              <h2>Army of the Dead: Invasão em Las Vegas</h2>
+              <p style="color: #95a3a3">
+                2021 | 18 | 2h 28min | Ação e aventura
+                <i class="bi bi-badge-hd"></i> <i class="bi bi-badge-4k"></i>
+              </p>
+              <p>
+                Após um surto de zumbis em Las Vegas, um grupo de mercenários se
+                aventura em uma zona de quarentena para tentar realizar o maior
+                assalto de todos os tempos.
+              </p>
+              <p>Estrelando: Dave Bautista, Ella Purnell, Omari Hardwick</p>
+              <button type="button" class="btn btn-secondary">
+                + MINHA LISTA
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="imagens/Samurai-x.jpg" class="d-block w-100" alt="..." />
+            <div class="button-list">
+              <h2>Samurai X: O Final</h2>
+              <p style="color: #95a3a3">
+                2021 | 14 | 2h 19min | Ação e aventura
+                <i class="bi bi-badge-hd"></i> <i class="bi bi-badge-4k"></i>
+              </p>
+              <p>
+                O ano é 1879. Jurados de vingança, Kenshin e seus aliados
+                enfrentam o inimigo mais forte de todos: Enishi Yukishiro e seus
+                comparsas.
+              </p>
+              <p>Estrelando: Takeru Satoh, Emi Takei, Mackenyu</p>
+              <button type="button" class="btn btn-secondary">
+                + MINHA LISTA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br />
+    <br />
+
+    <h2 class="section-title" style="color: white; font-size: 20px">
+      Populares na Netflix
+    </h2>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABST1BdpHShyhLefn2s1N_yWuVjO19NC9iOyW4x9I0Zjt2SHYI__zjLVQM33MGYIwZzjvLvxRVWUL2QH-bO-v0pSNMoYknSPO0abWGzxM1UC__IWd_f56hluX35u7.jpg?r=6e0"
+            alt="Ponto de Virada: 11/9 e a Guerra contra o Terror"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQrlUK2YzOpltrAP6SAv_yPZ4032xMbm-lF0s7Pt6eQ197e6iejOySafy3p4Xs3eNMzza3EZENlOG_7a4Pg4UDPupKgQDYJq4qQpZrU4ym2X_EMzFOeZxD9Nfm0U.jpg?r=987"
+            alt="La casa de papel: De Tóquio a Berlim"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfMVyLnEhE2nKRvvbyA2xjh8JO-WBs7XT-nffNVqoJ6EnaqQ2fvB8jgzc9Da-Iv36hcjaSWmeYVNifS7sY41cKXDnDQ17tzW_pPyuq49r-us0xpQ2yyCLMgf_A-3.jpg?r=8be"
+            alt="Elize Matsunaga: Era Uma Vez Um Crime"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV8OYupgSbwA5QXgjuj2C5n86kihM02VWO0-hqw-foGCqLikF0WAK5LnUEWVzNrxzaCmlgCauBAFDZNX_p16nJo63XOuw7qSf5Y_4L1OeBTcFWSP_E8ydtW2p-7d.jpg?r=65e"
+            alt="Grandes Momentos da Segunda Guerra em Cores"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTgNo7CAx01dzvvGysgx_LsCquwBEP9ye7e7rLsFssMWTDrE94Pxy9hNO52yLDdukXqr24Z8hfyf0ZFIeCdOdNxWnW2EZmjWrRSRx81M-L9XTAYigIEDT_6NRj1R.jpg?r=fb2"
+            alt="João de Deus - Cura e Crime"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABT9gLbpcdiN3V_t1szT3fDV3FHrlbJpEUC8fRMbjXBTqg4Ip9kx-3oslS9X4b5qJKL-m5AC0qoz9J8XKYjnka_8OID1-yE4ub4pmo-WLYbD2FLF4VOnyT6Lqh1PW.jpg?r=d90"
+            alt="Nosso Planeta"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRcBTWc2YThOSNTiZOlwjmG5uCAXati77v1dslRKA-MF6LYlyQ5Qa8n_dX1SDPTVgP_Lp08VHQUZlOUVKeZD_6L8bGo.jpg?r=3c8"
+            alt="Chorão: Marginal Alado"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf_98YrKvwP-GrBynULOuTh-UOwkyaVJuSPx8a-37XJzpEZazq0AQ-qRxJmC-R6_UXbQjs5gODAO6hG-G2exAFbB8-0bG-h6wGJKvTeIWyB4MVkPRaheUu3v3zwj.jpg?r=53a"
+            alt="Vida Após a Morte"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSGmKrpavz0UojSWcl66UdgqD_QOPpzZxj3_Wgp_lu9i37R8-W-QXbfR7vEJfC-RHYRoqvG35UAheNViXmtjG_u3_S8B76DhYODxEjn6TcwLMKlXMRnsup-dMvji.jpg?r=f28"
+            alt="Império Romano"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWxMyyznNw8zPh6avZPqkatw7cEtJ35x22VTSn8_MWH13wSobNoCKKSQp8tlDWiOt4K57Lrvy80BBuZB55CZ5JuQ3eVmvf_2WiRWBX6Do3C7BE9bK9zoFbulYOn6.jpg?r=7d9"
+            alt="Anitta: Made in Honório"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <h2 class="section-title" style="color: white">
+      Documentários inspiradores
+    </h2>
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdbII5Szh-A93GhNvk49WU8MOFDH288wgRNbIhArhAlqgYyt33SW5mDF_y4P8eq7rLr0BBGlOiazMdzD-ZvJPkZk1RI.jpg?r=c91"
+            alt="Ronaldo"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABc7LEQXvkKry5uII5JmPKWXzp8kiKuUzV6zs4dr_NNsrkSihak_mTCSyO2AzHa_x1SzlYxkGlv_9Kk4xluz7dlTcJAbVZQDSzaxGfRFO5jpsJRlwpgaQ6KhG7KH3.jpg?r=922"
+            alt="A terra á noite"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV0XjxoCxRbBH0M-rOOW0f71CBN1LyPymjHQY0fLKnXbBMdq6NGMwXj9tumjBtK2gotuDI-aTxzCNf2o8zIGc3R12WPjkT7hgd8bg7Hgu9uIiHV0dmUToCF48o8p.jpg?r=3ac"
+            alt="Pelé"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfHEaxKHvKCOMoyxCqpSOGsg32LvQubAcHgbdYNDv5jSPmargvhW9rOGJerng0OP439OOoKrqNkR1lbyHrwi1m--tIvEXehavQ0iBjLdRc-ZRVZGdAAPgr0x_NQn.jpg?r=531"
+            alt="A Magia dos Andes"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY9CvVmmrC-qU1Dsh1G-urYrW8UxyqmzkJ8BBXNouLJQqSXxjFtIREvHV0XhQaOOf7FptFFBA-cUFp8dCzssxKDEkuCpBSNR9hR8vs66NI1LAh5a31ZIrIaelY6W.jpg?r=525"
+            alt="Curta Essa com Zac Efron"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbhDE2yXG6CMqXDMi0M7OlpH8041hPEIRpgE7DMASNBOzwo9Ysw5px4N2UOnvIWPHaOJlzlvHGgAFvsUf4whufbv_hqNgVAx22TreIVx-8cx0d2uGxAMHOIj4YHtgA.jpg?r=7dd"
+            alt="Brinquedos que marcaram época"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeJTMP3g7U1t2n-JQxnPjR3TzrRoVVIx1SBtScX7iO1c0Ecn6I2-i6pHQE2-iY_9SvgphEzrr3eEY72Rm6DbSNopAcKZRhsQ1Y3zbUR_5ocXDDeR49wrPPXSSwfnoQ.jpg?r=985"
+            alt="Irmães de Cela"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTvIav2zbMRt6UwVcrRxWO61SylHqB2sCLiJ9GLFCqb8dtZ_jCeF8CRpnJwVk2hczFEs7gWo3ZL8wlu67tj8_t2auTkuYWXZfxNsr1aPm9H6vHuNnj7hlThj4t4J8w.jpg?r=606"
+            alt="Doenças do século 21"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXLcD8nJMEczCBCMf8-AZJAlbJUr9xm7-YJgfAZPy2i4mi22f3pnVfMajohksK5FVHFmxOHfTbTL8deFbiKE1HOTvqU.jpg?r=9ea"
+            alt="Lixo Extraordinário"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <h2 class="section-title" style="color: white">Séries instigantes</h2>
+    <div class="swiper mySwiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcxnqHEbvIGnW7AM-IJ-UnC2AB1oWec-69RiAgLeJH1nXqoRcv2P7QY5-RJU6lR5F5Po4dp8FygEDPKbqhwkvH4gVpx-NHL9tYtvxsLL4F3Sk4lgFI-dtAZGYAkk.jpg?r=3af"
+            alt="Bandidos da TV"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYm3cbJPhK6d6BO7z_vlHc9j3nSOFy_ylcGw-u1wCmq2TsdqHDcp4vktJ7yOki-Yz30J5Da7I17qIKc7YIB8hYuLHSwpBHpxzsc00BU0JTh0I8OWG0YPDb54VFin.jpg?r=157"
+            alt="Sou um Assassino"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXOT_nb7s0TOnXrkf7r4hDp4rww5Ni8k6keUf2A6xuMyR2ZDicC4ypWCDp56z8At1hE02EOSpD20jgDIQRHZ0-ZchPUTHeIwqIicfZUxdrrvf4edsiHe-uAqr37r.jpg?r=6a8"
+            alt="Os últimos Czares"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXw6sBE0Av6GdJhpqi3qlrrsd2-CiVFV32FngATP8jdjmHXB-X9gjl5lyE5aoc0PuGrAAaG0ITLgdCjgpMjAtxx9ugvHLN3cbJm1ic1Obmoonmpaz7_MI0aX5dTC.jpg?r=ed3"
+            alt="Gênio Diabólico"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe4Mtud6_KhKwm7_tALA5plAOSmi69FdZwZ3QtQSFuBeFor7UHeDJgAh2rXrjHMj3cofP9YAyJNTwQZfkfWSXEm2IizO4fWamy85p88_cbxf1qY0TbhkN9yqOhuS.jpg?r=1fd"
+            alt="Jeffrey Epstein: Poder e Perversão"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQrZ478s9JxElFUr-coaa8f5NIqt5ryUOS9tLvzKuytW-n_S6KnvrCzhyPyWotyOHTZgr5TQze17FD7OYJhPOGGtuERBaq9ksttWKxpaNx0y7crrOcqO69xdVWBvVw.jpg?r=528"
+            alt="Mistérios sem Solução"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQnlDOCyk2eomoiRuWhX4nqpVmiiCo8FEA1-qWWpGllTn6sZvjjVTbZKNbUPLsRMuTX4hQtR8P2NpRLjJ2Vbb6Vu0ugHrEVNB0zSu5PTu2hv7AS95klEtlphRFx0Iw.jpg?r=b58"
+            alt="Cena do Crime – Mistério e Morte no Hotel Cecil"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVFrctsFfNLlVE5bTWgY07Qwzj_Q4hIxLd7zrUhQ6gqNFwEfhhU6q5iO-V_VgNMmbPaagj2fxkmNyLVLXrdJDUgHC03Ae7j4DN93GAAmcfg3o56orj-aefM8kQOH_Q.jpg?r=740"
+            alt="Roubos Inacreditáveis"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://occ-0-4099-3851.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUbytxndKZfnAp8gIVpey_n5Sgv3upj4plcSkpUjpbGD0mH07Ah7YmawvuWjHARLUPRCz6Z8e0wtZA4r3LrDeegQcNwC1DNSi_vadOAPRQ1gOY-VjNpTQ68FgDbwyA.jpg?r=d6c"
+            alt="Quarto 2806: A Acusação"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="div-assine">
+      <h2>Tem muito mais esperando por você.</h2>
+      <p>
+        A Netflix tem um grande catálogo de filmes, documentários, séries,
+        originais Netflix premiados e muito mais. Assista o quanto quiser,
+        quando quiser.
+      </p>
+      <button type="button" class="btn btn-danger">ASSINE A NETFLIX</button>
+    </div>
+
+    <footer class="section-footer">
+      <div class="site-footer">
+        <a id="duvida" href="#">Dúvidas? Entre em contato.</a>
+        <br />
+        <br />
+        <ul>
+          <li><a href="#">Perguntas frequentes</a></li>
+          <li><a href="#">Centro de ajuda</a></li>
+          <li><a href="#">Conta</a></li>
+          <li><a href="#">Imprensa</a></li>
+          <li><a href="#">Relações com investidores</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Resgatar cartão pré-pago</a></li>
+          <li><a href="#">Comprar cartão pré-pago</a></li>
+          <li><a href="#">Formas de assistir</a></li>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Preferências de cookies</a></li>
+          <li><a href="#">Informações corporativas</a></li>
+          <li><a href="#">Entre em contato</a></li>
+          <li><a href="#">Teste de velocidade</a></li>
+          <li><a href="#">Avisos legais</a></li>
+          <li><a href="#">Só na Netflix</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 2,
+        loop: true,
+        freeMode: true,
+        speed: 500,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            freeMode: false,
+          },
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        slidesPerView: 2,
+        loop: true,
+        freeMode: true,
+        speed: 500,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            freeMode: false,
+          },
+        },
+      });
+      var swiper3 = new Swiper(".mySwiper3", {
+        spaceBetween: 10,
+        slidesPerView: 2,
+        loop: true,
+        freeMode: true,
+        speed: 500,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            freeMode: false,
+          },
+        },
+      });
+    </script>
+  </body>
+  <!--Criado por Eduardo Lima \../-->
+</html>
+

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #141414;
+}
+
+#logo-netflix {
+  width: 200px;
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.541);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+/*Cor do botão-hamburge*/    
+#button-menu {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+/*Cor fundo no menu-dropdown*/
+#nav-dropdown ul {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+/*Cor letras menu-dropdown*/
+#nav-dropdown a {
+  color: red;
+  font-size: 20px;
+}
+
+/*Fundo menu-dropdown*/    
+#dropdown-menu-item a:hover {
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+#navbar-right a {
+  color: white;
+  font-size: 20px;
+}
+#navbar-right a:hover {
+  background-color: rgba(255, 255, 255, 0.377);
+  border-radius: 5px;
+}
+#navbar-right a:not(hover) {
+  border-radius: 5px;
+}
+
+#carousel-image {
+  display: flex;
+  height: 550px;
+}
+
+.button-list {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9108018207) 0%, rgba(14, 14, 14, 0.8015581232) 37%, rgba(0, 0, 0, 0.5326505602) 100%);
+  border-radius: 6px;
+  padding: 10px;
+  width: 600px;
+  text-align: justify;
+}
+.button-list button {
+  background-color: #f40612f6;
+  border: none;
+}
+.button-list button:hover {
+  background-color: #ff000d;
+}
+
+.section-title {
+  color: #ffff;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.div-assine {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.div-assine h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.div-assine p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3px 300px;
+  line-height: 1.2;
+}
+.div-assine button {
+  font-size: 20px;
+  background-color: #bb0a12;
+  border: none;
+  padding: 14px 2em;
+  min-width: 112px;
+  min-height: 48px;
+  margin-top: 30px;
+}
+.div-assine button:hover {
+  background-color: #f40612;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: auto;
+  margin: 20px 0;
+  margin-bottom: 80px;
+}
+
+.swiper-button-next {
+  color: #E50914;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  top: 0;
+  right: 0;
+  height: 127%;
+}
+
+.swiper-button-prev {
+  color: #E50914;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  top: 0;
+  left: 0;
+  height: 127%;
+}
+
+.site-footer ul {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  list-style: none;
+  margin-left: 40px;
+  line-height: 30px;
+}
+.site-footer #duvida {
+  font-size: 16px;
+  margin-left: 70px;
+  margin-top: 200px;
+}
+.site-footer a {
+  color: #757575;
+  font-size: 13px;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.section-footer {
+  margin-top: 130px;
+}
+
+/*# sourceMappingURL=styles.css.map */
