@@ -67,7 +67,10 @@ body
 
 .button-list
     @include text()
-
+    @media screen and ( max-width: 640px )
+        width: 400px
+        margin-top: 120px
+        font-size: 12px
 //------Fim Dropmenu----------------------------------------   
 
 //-----Titulo das seções carousel------     
@@ -90,6 +93,7 @@ body
     h2
         font-size: 36px
         font-weight: 700
+        text-align: center
     p
         font-size: 1.5rem
         text-align: center
@@ -146,6 +150,14 @@ body
         list-style: none
         margin-left: 40px
         line-height: 30px
+        @media screen and ( max-width: 873px )
+            grid-template-columns: 200px 200px 200px
+        @media screen and ( max-width: 640px )
+            grid-template-columns: 200px 200px 
+        @media screen and ( max-width: 479px )
+            grid-template-columns: 200px 
+            width: auto   
+        
     #duvida
         font-size: 16px
         margin-left: 70px
@@ -161,4 +173,6 @@ body
 
 
 .section-footer
-    margin-top: 130px    
+    margin-top: 130px  
+   
+    

@@ -76,6 +76,13 @@ body {
 .button-list button:hover {
   background-color: #ff000d;
 }
+@media screen and (max-width: 640px) {
+  .button-list {
+    width: 400px;
+    margin-top: 120px;
+    font-size: 12px;
+  }
+}
 
 .section-title {
   color: #ffff;
@@ -93,6 +100,7 @@ body {
 .div-assine h2 {
   font-size: 36px;
   font-weight: 700;
+  text-align: center;
 }
 .div-assine p {
   font-size: 1.5rem;
@@ -152,6 +160,22 @@ body {
   list-style: none;
   margin-left: 40px;
   line-height: 30px;
+}
+@media screen and (max-width: 873px) {
+  .site-footer ul {
+    grid-template-columns: 200px 200px 200px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .site-footer ul {
+    grid-template-columns: 200px 200px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .site-footer ul {
+    grid-template-columns: 200px;
+    width: auto;
+  }
 }
 .site-footer #duvida {
   font-size: 16px;
