@@ -76,9 +76,9 @@ body {
 .button-list button:hover {
   background-color: #ff000d;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 636px) {
   .button-list {
-    width: 400px;
+    width: 90%;
     margin-top: 120px;
     font-size: 12px;
   }
